@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header><img src="images\IoC_Logo_OnBlue_AW.jpg" alt="fullStack_academy_logo"></header>
+    <nav>
+        <ul>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="teachers.html">Teachers</a>
+                <ul>
+                    <li><a href="teachers_per_course.html">Teachers per Course</a></li>
+                </ul>
+            </li>
+            <li><a href="students.html">Students</a>
+                <ul>
+                    <li><a href="students_per_course.html">Students per Course</a></li>
+                </ul>
+            </li>
+            <li><a href="assignments.html">Assignments</a>
+                <ul>
+                    <li><a href="assignment_per_course.html">Assignment per Course</a></li>
+                    <li><a href="assignment_per_student_per_course.html">Assignment per Student per Course</a></li>
+                </ul>
+            </li>
+            <li style="float:right"><a class="active" href="index.html">Home Page</a></li>
+        </ul>
+    </nav>
+    <form action="">
+        <label for="teacherName">
+            <p>Teacher's Name:</p>
+        </label>
+        <input name="teacherName" id="teacherName" type="text" placeholder="Enter first name..">
+        <label for="teacherLastName">
+            <p>Teacher's Last Name:</p>
+        </label>
+        <input name="teacherLastName" id="teacherLastName" type="text" placeholder="Enter Last name..">
+        <label for="subject">
+            <p>Choose Subject to Teach:</p>
+        </label>
+        <select name="subject" id="subject">
+            <option></option>
+            <option value="Language Learning">Language Learning</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Database Programming">Database Programming</option>
+            <option value="Full-Stack Development">Full-Stack Development</option>
+        </select>
+        <p>
+            <button type="submit" id="submit">Add</button>
+            <button type="submit" id="update" hidden>Update</button>
+            <button type="reset" id="reset">Reset</button>
+        </p>
+    </form>
+    <script src="js\teachers.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header><img src="images\IoC_Logo_OnBlue_AW.jpg" alt="fullStack_academy_logo"></header>
+    <nav>
+        <ul>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="teachers.html">Teachers</a>
+                <ul>
+                    <li><a href="teachers_per_course.html">Teachers per Course</a></li>
+                </ul>
+            </li>
+            <li><a href="students.html">Students</a>
+                <ul>
+                    <li><a href="students_per_course.html">Students per Course</a></li>
+                </ul>
+            </li>
+            <li><a href="assignments.html">Assignments</a>
+                <ul>
+                    <li><a href="assignment_per_course.html">Assignment per Course</a></li>
+                    <li><a href="assignment_per_student_per_course.html">Assignment per Student per Course</a></li>
+                </ul>
+            </li>
+            <li style="float:right"><a class="active" href="index.html">Home Page</a></li>
+        </ul>
+    </nav>
+    <form action="">
+        <label for="students">
+            <p>Students:</p>
+        </label>
+        <select name="students" id="students">
+            <option></option>
+            <option value="Olive Yew">Olive Yew</option>
+            <option value="Aida Bugg">Aida Bugg</option>
+            <option value="Maureen Biologist">Maureen Biologist</option>
+            <option value="Thanasis Tassopoulos">Thanasis Tassopoulos</option>
+            <option value="Kwstas Xountas">Kwstas Xountas</option>
+        </select>
+        <br><br><br>
+        <p>Will watch this Course:</p><br><br>
+        <label for="courses">
+            <p>Courses:</p>
+        </label>
+        <select name="courses" id="courses">
+            <option></option>
+            <option value="C#|Part-Time 1|01/03/22-30/09/22">C#|Part-Time 1|01/03/22-30/09/22</option>
+            <option value="C#|Part-Time 2|01/03/22-30/09/22">C#|Part-Time 2|01/03/22-30/09/22</option>
+            <option value="Java|Part-Time 1|01/03/22-30/09/22">Java|Part-Time 1|01/03/22-30/09/22</option>
+            <option value="Java|Part-Time 2|01/03/22-30/09/22">Java|Part-Time 2|01/03/22-30/09/22</option>
+            <option value="Python|Part-Time|01/03/22-30/09/22">Python|Part-Time 1|01/03/22-30/09/22</option>
+            <option value="Python|Full-Time|01/03/22-30/09/22">Python|Full-Time|01/03/22-30/09/22</option>
+        </select>
+        <br><br>
+        <p>
+            <button type="submit" id="submit">Add</button>
+            <button type="submit" id="update" hidden>Update</button>
+            <button type="reset" id="reset">Reset</button>
+        </p>
+    </form>
+    <script src="js\students_per_course.js"></script>
+</body>
+
+</html>
